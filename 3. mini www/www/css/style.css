@@ -64,7 +64,7 @@ button{
     background-color: transparent;
     font-size: 1.2rem;
     border: 2px solid white;
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 
 @media (orientation: landscape){
@@ -250,7 +250,6 @@ button{
 
 
 section {
-    min-height: 30vh;
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -321,4 +320,125 @@ section {
         font-size: 1.6rem;
         font-weight: normal;
     }
+}
+
+.portfolio {
+    background-color: black;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 10px 10px 20px 10px;
+}
+
+.portfolio .web img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio .about {
+    color: white;
+    padding: 10px 20px 20px 0px;
+}
+
+.portfolio .about h2 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+}
+
+.portfolio .about p {
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.portfolio .project {
+    margin-bottom: 20px;
+    max-width: 1920px;;
+}
+.portfolio .project:nth-of-type(odd){
+    background-color: orange;
+}
+
+.portfolio .project:nth-of-type(even){
+    background-color: royalblue;
+}
+@media (min-width:768px){
+    .portfolio h1 {
+        font-size: 2.5rem;;
+    }
+    .portfolio .about h2 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        border-bottom: 2px solid white;
+        text-indent: 30px;
+        margin-bottom: 20px;
+        padding: 18px 0px;
+    }
+    
+    .portfolio .about p {
+        font-size: 1.8rem;
+        padding-left: 30px;
+    }
+
+}
+@media (orientation: landscape){
+    .web, .about{
+        width: 50%;
+        float: left;
+    }
+
+    .portfolio .project:nth-of-type(even) .web{
+        float: right;
+    }
+}
+
+.slogan {
+    color: white;
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.slogan h1{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.slogan .text{
+    font-size: 1.4rem;
+    padding-bottom: 25px;
+}
+
+.slogan .author{
+    font-size: 1rem;
+}
+
+.slogan .bg{
+    padding: 40px 12px;
+    background-color: rgba(0, 63, 114,0.5)
+
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* dodać media queries */
+
+footer{
+    min-height: 80vh;
 }
