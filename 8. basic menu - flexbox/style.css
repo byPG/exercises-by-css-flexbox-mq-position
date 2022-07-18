@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    flex-basis: 100%;
+    /* flex-shrink: 1; */
+    /* flex-grow: 0; */
+    text-align: center;
+}
+
+ul li a{
+    display: block;
+    font-size: 2rem;
+    background-color: rgb(38, 62, 187);
+    /* border: solid 2px black; */
+    text-decoration: none;
+    padding: 20px;
+    margin: 15px;
+    color: white;
+}
+
+@media (max-width: 1024px){
+    ul{
+        flex-direction: column;
+    }
+    ul li a{
+        margin: 0;
+    }
+}

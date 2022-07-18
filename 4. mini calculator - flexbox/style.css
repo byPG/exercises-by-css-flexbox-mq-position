@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 3px solid black;
+}
+
+.result{
+    flex-basis: 10%;
+    background-color: grey;
+}
+
+.panel{
+    flex-grow: 1;
+    background-color: aquamarine;
+}
+
+.panel{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.panel div{
+    display: flex; /*właściwość rodzica dla dzieci*/
+    justify-content: center; /*właściwość rodzica dla dzieci*/
+    align-items: center; /*właściwość rodzica dla dzieci*/
+    flex-basis: 30%;  /*właściowść dziecka*/
+    flex-grow: 1;   /*właściowść dziecka*/
+    border: 2px solid rebeccapurple;
+    font-size: 50px;
+
+}
