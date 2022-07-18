@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /*lepiej, bo flex zajmuje tylko tyle ile potrzebuje*/
+    background-color: #ddd;
+    font-size: 2rem;
+    color: white;
+}
+
+nav{
+    background-color: #000;
+    align-self: stretch;
+    /* flex-basis: 500px; */
+    padding: 20px 0;
+}
+
+header{
+    width: 100%;
+    background-color: pink;
+    max-width: 1200px;
+    flex-basis: 25vh;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    background-color: deeppink;
+    width: 100%;
+    max-width: 1200px;
+    flex-basis: 25vh;
+}
+
+main{
+    background-color: rgb(255, 153, 170);
+    flex-grow: 1;
+}
+
+aside{
+    flex-basis: 25%;
+    min-width: 250px;
+}
+
+footer{
+    align-self: stretch;
+    background-color: black;
+    flex-basis: 10vh;
+}
